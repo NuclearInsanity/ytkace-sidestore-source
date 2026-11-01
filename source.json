@@ -1,0 +1,39 @@
+{
+  "name": "YTKACE — Official Releases",
+  "identifier": "com.nuclearinsanity.ytkace.official",
+  "apiVersion": "v2",
+  "subtitle": "Unmodified IPA releases from itzzace/ytkace",
+  "description": "Direct official GitHub release IPAs. This source tracks the original developer's builds; no repackaging or injected extras.",
+  "iconURL": "https://avatars.githubusercontent.com/u/318309682?v=4",
+  "website": "https://github.com/itzzace/ytkace",
+  "sourceURL": "https://raw.githubusercontent.com/NuclearInsanity/ytkace-sidestore-source/main/source.json",
+  "apps": [
+    {
+      "name": "YTKACE",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "itzzace0",
+      "subtitle": "Official v1.1.4 • YouTube 21.42.4",
+      "category": "photo-video",
+      "localizedDescription": "YTKACE adds SponsorBlock, background playback, downloads and playback controls to YouTube.",
+      "iconURL": "https://avatars.githubusercontent.com/u/318309682?v=4",
+      "tintColor": "FF0033",
+      "version": "21.42.4",
+      "versionDate": "2026-10-25",
+      "versionDescription": "Official YTKACE release v1.1.4.\n\nby @itzzace0\n\nWhat's new:\n• Updated to YouTube 21.42.4\n• Added a SponsorBlock button to the player to whitelist channels, vote on segments and submit new ones\n• Added Report AI Channels to report channels to AiSList from the ⋯ menu\n• Added Clean Copied Links to remove tracking like si= from links you copy or share\n• Added options to remove items from the ⋯ menu\n• Added Tab Bar options for Liquid Glass: Default, YTKACE, YouTube or Off\n• Added Keep Shorts in Home, Search and on Channels\n\nFixed:\n• Remove Previous/Next not working in playlists\n• Blank space left when fullscreen actions are hidden\n• Remove Mixes missing some mixes\n\nYouTube 21.42.4 requires iOS 17, so there are two IPAs:\n• `YTKACE_1.1.4_YouTube_21.42.4.ipa` for iOS 17 and newer\n• `YTKACE_1.1.4_YouTube_iOS16_21.33.6.ipa` for iOS 16",
+      "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.4/YTKACE_1.1.4_YouTube_21.42.4.ipa",
+      "size": 138006169,
+      "versions": [
+        {
+          "version": "21.42.4",
+          "buildVersion": "21.42.4",
+          "date": "2026-10-25",
+          "localizedDescription": "Official YTKACE release v1.1.4.\n\nby @itzzace0\n\nWhat's new:\n• Updated to YouTube 21.42.4\n• Added a SponsorBlock button to the player to whitelist channels, vote on segments and submit new ones\n• Added Report AI Channels to report channels to AiSList from the ⋯ menu\n• Added Clean Copied Links to remove tracking like si= from links you copy or share\n• Added options to remove items from the ⋯ menu\n• Added Tab Bar options for Liquid Glass: Default, YTKACE, YouTube or Off\n• Added Keep Shorts in Home, Search and on Channels\n\nFixed:\n• Remove Previous/Next not working in playlists\n• Blank space left when fullscreen actions are hidden\n• Remove Mixes missing some mixes\n\nYouTube 21.42.4 requires iOS 17, so there are two IPAs:\n• `YTKACE_1.1.4_YouTube_21.42.4.ipa` for iOS 17 and newer\n• `YTKACE_1.1.4_YouTube_iOS16_21.33.6.ipa` for iOS 16",
+          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.4/YTKACE_1.1.4_YouTube_21.42.4.ipa",
+          "size": 138006169,
+          "minOSVersion": "17.0"
+        }
+      ]
+    }
+  ],
+  "news": []
+}
