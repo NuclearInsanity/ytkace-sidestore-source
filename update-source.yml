@@ -1,0 +1,44 @@
+name: Update official YTKACE SideStore source
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'  # Every six hours UTC; may run late
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ytkace-source
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Find official release and update source.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/sync.py
+
+      - name: Commit updated source only when changed
+        run: |
+          git add source.json
+          if git diff --cached --quiet; then
+            echo 'Source already up to date'
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit -m 'Update official YTKACE SideStore source'
+          git push
